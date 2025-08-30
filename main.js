@@ -6,7 +6,7 @@ let symbol = document.querySelector(".symbol");
 async function getData(location) {
   try {
     let pull = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=7b5fd08852f04318a4c164935252908&q=${location}`
+      `https://api.weatherapi.com/v1/current.json?key=7b5fd08852f04318a4c164935252908&q=${location}`
     , {
       mode: "cors"
     });
